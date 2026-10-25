@@ -121,15 +121,15 @@ def plot(loss_list, acc_train, acc_test, save_path='./figure.png'):
 
     # Plot the training loss over iterations
     plt.subplot(1, 2, 1)
-    plt.plot(loss_list)
+    plt.plot(loss_list, marker='o')
     plt.xlabel('Iteration')
     plt.ylabel('Loss')
     plt.title("Training Loss")
 
     # Plot the train & test accuracies over epochs
     plt.subplot(1, 2, 2)
-    plt.plot(acc_train)
-    plt.plot(acc_test)
+    plt.plot(acc_train, marker='o')
+    plt.plot(acc_test, marker='o')
     plt.xlabel('Epoch')
     plt.ylabel('Accuracy')
     plt.title("Model Accuracy")
